@@ -1,5 +1,3 @@
-
-
 ## Running this app
 
 You'll need to have [Docker installed](https://docs.docker.com/get-docker/).
@@ -17,6 +15,14 @@ cp .env.example .env
 cp docker-compose.override.yml.example docker-compose.override.yml
 ```
 
+#### Edit .env file with gmail account params
+```sh
+export SMTP_USER=username
+export SMTP_PASS=password
+export FROM_MAIL=username@gmail.com
+```
+#### Give an app an access to use smtp
+[Give access](https://myaccount.google.com/u/0/lesssecureapps)
 #### Build everything:
 
 ```sh
@@ -27,11 +33,4 @@ docker-compose up --build
 
 ```sh
 ./run rails db:setup
-```
-
-#### Edit .env file with gmail account params
-```sh
-export SMTP_USER=username
-export SMTP_PASS=password
-export FROM_MAIL=username@gmail.com
 ```
