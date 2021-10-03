@@ -6,6 +6,7 @@ You'll need to have [Docker installed](https://docs.docker.com/get-docker/).
 
 ```sh
 git clone https://github.com/Bukvar1337/image_optimizer.git
+cd image_optimizer
 ```
 
 #### Copy a few example files because the real files are git ignored:
